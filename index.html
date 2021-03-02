@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap 5 Start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Bootstrap 5 End-->
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <div id="our-services" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Photo Editng -->
+                    <div class="col-md-12">
+                        <h3>Image Editing Service</h3>
+
+                        <!-- Slect Service Start -->
+                        <label for="selecService" class="d-block">Select Your Service</label>
+                        <select name="" id="selecService" class="form-select">
+                            <option value="Selec Your Service">Selec Your Service</option>
+                            <option value="Clipping Path Service">Clipping Path Service</option>
+                            <option value="Background Remove Service">Background Remove Service</option>
+                            <option value="Image Masking Servuce">Image Masking Servuce</option>
+                            <option value="Deop Shadow Service">Deop Shadow Service</option>
+                            <option value="Ghost Mannequin Service">Ghost Mannequin Service</option>
+                            <option value="Color Variants & Color Changing">Color Variants & Color Changing</option>
+                            <option value="Product Photo Editing">Product Photo Editing</option>
+                            <option value="Vector Conversion Service">Vector Conversion Service</option>
+                        </select>
+                        <!-- Slect Service End -->
+
+                        <!-- Quentaty Area Start-->
+                    <div class="row mt-3">
+                        <div class=" col-md-6">
+                            <h3>Enter quantity*</h3>
+                            <input id="img-quantity-input" class="form-control" type="number" min="0" value="0" placeholder="Enter quantity"> 
+                        </div>
+                        <div class=" col-md-6">
+                            <h3>Turnaround Time</h3>
+                            <select class="form-select" id="img-time">
+                                <option selected value="48">48</option>
+                                <option value="24">24</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>                        
+                    </div>
+                    <!-- Quentaty Area End-->
+
+                      <!-- Price Area Start-->
+                      <div class="d-flex justify-content-between mt-3">
+                        <div>
+                            <label>Basic</label>
+                            <input type="text" value="0"  id="img-basic-price" class="form-control" readonly>
+                        </div>
+                        <div>
+                            <label>Standerd</label>
+                            <input type="text" value="0"  id="img-standerd-price" class="form-control" readonly>
+                        </div>
+                        <div>
+                            <label>Premium</label>
+                            <input type="text" value="0" id="img-remiupm-price" class="form-control" readonly>
+                        </div>
+                    </div>
+                    <!-- Price Area End-->
+
+                    <!-- Service Info Start -->
+                    <div class="service-info text-center mt-4">
+                        <p id="img-infoDes" class="px-5">Select a service and a quantity to calculate your estimate.</p>
+                        <div id="img-custom-info">
+                            <h5>Service Name : <span id="s-name"></span></h5>
+                            <!-- <p>Quantity : <span id="img-guantity-info"></span> Image</p> -->
+                            <h5>Quantity : <span class="img-quantity-info"></span> Image</h5>
+                        </div>
+                    </div>
+                    <!-- Service Info End -->
+
+                    <!-- Service Image Area Start-->
+                    <div class="service-image-container d-flex justify-content-between">
+                       <div class="service-image-div" >
+                            <img src="img/Background Removal/basic.jpg" alt="" id="img-info-img1">                            
+                            <h5>Besic : $<span id="un_img_besic">0.00</span></h5>
+                            
+                       </div>
+                        <div class="service-image-div">
+                            <img src="img/Background Removal/medium.jpg" alt="" id="img-info-img2">                            
+                            <h5>Standerd : $<span id="un_img_standred">0.00</span></h5>
+                        </div>
+                        <div class="service-image-div">
+                            <img src="img/Background Removal/premium.jpg" alt="" id="img-info-img3">                            
+                            <h5>Premium : $<span id="un_img_Premium">0.00</span> </h5>
+                        </div>
+
+                    </div>
+                    <!-- Service Image Area End-->
+
+
+
+
+                    </div>
+                    <!-- Photo Retuching -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- Boostartp JS Start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- Boostartp JS End -->
+
+    <!-- Custom Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
